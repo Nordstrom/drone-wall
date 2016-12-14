@@ -541,7 +541,7 @@ module.exports = [ "$httpBackend", "DroneAPI",
         ];
         var currentResponse = null;
 
-        $httpBackend.whenRoute( "GET", DroneAPI.rootPath + "user/feed" )
+        $httpBackend.whenGET(DroneAPI.rootPath + "user/feed" )
 
             .respond( function ()
             {

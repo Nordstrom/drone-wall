@@ -1,15 +1,14 @@
 build:
-  image: node:5.0.0
+  image: node:6
   commands:
     - npm -g install grunt-cli
     - npm install
-    - grunt --env=prod
-
-publish:
-  docker:
-    repo: drone/drone-wall
-    username: drone
-    password: $$DOCKER_PASS
-    email: $$DOCKER_EMAIL
-    when:
-      branch: master
+#
+#publish:
+#  docker:
+#    repo: drone/drone-wall
+#    username: drone
+#    password: $$DOCKER_PASS
+#    email: $$DOCKER_EMAIL
+#    when:
+#      branch: master

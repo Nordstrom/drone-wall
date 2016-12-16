@@ -85,7 +85,6 @@ module.exports = [ "$q", "$filter", "API", "Settings",
 
             return deferred.promise;
         };
-
         return apiInterface;
     }
 

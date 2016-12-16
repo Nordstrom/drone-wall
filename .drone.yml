@@ -1,7 +1,8 @@
 build:
-  image: node:6
-  commands:
-    - echo "hello drone"
+  commit:
+    image: node:6
+    commands:
+      - echo "hello"
 
 #
 #publish:

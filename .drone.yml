@@ -1,8 +1,8 @@
 build:
   image: node:6
   commands:
-    - npm -g install grunt-cli
-    - npm install
+    - echo "hello drone"
+
 #
 #publish:
 #  docker:
